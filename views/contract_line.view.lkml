@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/contract_line.view"
-
 view: contract_line {
-  extends: [contract_line_config]
-}
-
-view: contract_line_core {
   sql_table_name: @{SCHEMA_NAME}.CONTRACT_LINE ;;
 
   set: company_contract_product {

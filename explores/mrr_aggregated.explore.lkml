@@ -1,6 +1,7 @@
-explore: mrr_aggregated_core {
-  hidden: yes
-  extension: required
+include: "/views/*.view.lkml"
+
+explore: mrr_aggregated {
+
   label: "MRR Aggregated"
 
   join: company {

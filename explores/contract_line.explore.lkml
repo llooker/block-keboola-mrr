@@ -1,6 +1,6 @@
-explore: contract_line_core {
-  hidden: yes
-  extension: required
+include: "/views/*.view.lkml"
+explore: contract_line {
+
   description: "Contains also contracts without MRR."
 
   join: contract {

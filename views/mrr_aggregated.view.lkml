@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/mrr_aggregated.view"
-
 view: mrr_aggregated {
-  extends: [mrr_aggregated_config]
-}
-
-view: mrr_aggregated_core {
   label: "MRR Aggregated"
   sql_table_name: @{SCHEMA_NAME}.MRR_AGGREGATED ;;
 

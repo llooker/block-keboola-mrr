@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/product.view"
-
 view: product {
-  extends: [product_config]
-}
-
-view: product_core {
   sql_table_name: @{SCHEMA_NAME}.PRODUCT ;;
 
   dimension: product_id {
