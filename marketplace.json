@@ -1,0 +1,35 @@
+{
+  "label": "Subscription Revenue Essentials",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/KeboolaBrand.png",
+    "tagline": "Out-of-the-box analysis for Churn, Retention and LTV."
+  },
+
+  "constants": {
+    "CONNECTION": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "SCHEMA_NAME": {
+      "label": "Schema Name"
+    },
+    "CONFIG_PROJECT_NAME": {
+      "label": "Config Project Name"
+    }
+  },
+  "models": [
+    {
+      "name": "block_keboola_mrr",
+      "connection_constant": "CONNECTION"
+    }
+  ],
+  "auxiliary_projects": [
+    {
+      "git_uri": "git://github.com/llooker/block-keboola-mrr-config.git",
+      "git_ref": "4ba139df3e1241136f48cc9112d53d4af8c3e0f7",
+      "label": "MRR by Keboola Config",
+      "constant_name": "CONFIG_PROJECT_NAME"
+    }
+  ]
+}
