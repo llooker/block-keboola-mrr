@@ -43,6 +43,5 @@ connection: "@{CONNECTION}"
 
 label: "Block Keboola MRR"
 
-include: "/views/*.view"
 include: "/explores/*.explore.lkml"
 include: "/dashboards/*.dashboard.lookml"

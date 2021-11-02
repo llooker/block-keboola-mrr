@@ -1,5 +1,3 @@
-
-
 view: company {
   sql_table_name: @{SCHEMA_NAME}.COMPANY ;;
 
