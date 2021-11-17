@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/contract.view"
-
 view: contract {
-  extends: [contract_config]
-}
-
-view: contract_core {
   sql_table_name: @{SCHEMA_NAME}.CONTRACT ;;
 
   dimension: contract_id {

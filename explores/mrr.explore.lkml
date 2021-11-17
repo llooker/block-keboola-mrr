@@ -1,6 +1,7 @@
-explore: mrr_core {
-  hidden: yes
-  extension: required
+include: "/views/*.view.lkml"
+
+explore: mrr {
+
   description: "Contains only contracts with MRR."
   label: "MRR"
 

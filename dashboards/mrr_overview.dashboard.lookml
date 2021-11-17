@@ -4,7 +4,7 @@
   elements:
   - title: Current MRR
     name: Current MRR
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr
     type: single_value
     fields: [mrr.contract_line_mrr]
@@ -19,7 +19,7 @@
     height: 3
   - title: Annualized
     name: Annualized
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr
     type: single_value
     fields: [mrr.contract_line_mrr]
@@ -46,7 +46,7 @@
     height: 3
   - title: Current Contracts
     name: Current Contracts
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: contract_line
     type: single_value
     fields: [contract.count]
@@ -61,7 +61,7 @@
     height: 3
   - title: MRR by Product Family
     name: MRR by Product Family
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr
     type: looker_area
     fields: [mrr.contract_line_mrr, mrr.date_month, product.product_family]
@@ -128,7 +128,7 @@
     height: 7
   - title: MRR by Year Cohorts
     name: MRR by Year Cohorts
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr
     type: looker_area
     fields: [company.date_created_year, mrr.date_month, mrr.contract_line_mrr]
@@ -194,7 +194,7 @@
     height: 7
   - title: Active Customers by ARR Bucket
     name: Active Customers by ARR Bucket
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr_aggregated
     type: looker_column
     fields: [mrr_aggregated.date_month, mrr_aggregated.ARR_bucket, mrr_aggregated.customer_count]
@@ -266,7 +266,7 @@
     height: 7
   - title: MRR by ARR Bucket
     name: MRR by ARR Bucket
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr_aggregated
     type: looker_area
     fields: [mrr_aggregated.date_month, mrr_aggregated.gross_mrr, mrr_aggregated.ARR_bucket]
@@ -335,7 +335,7 @@
     height: 7
   - title: Customers Count Changes
     name: Customers Count Changes
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr_aggregated
     type: looker_column
     fields: [mrr_aggregated.date_month, mrr_aggregated.gross_action, mrr_aggregated.count_change]
@@ -400,7 +400,7 @@
     height: 6
   - title: Y/Y ARR Change
     name: Y/Y ARR Change
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr_aggregated
     type: looker_column
     fields: [mrr_aggregated.gross_mrr, mrr_aggregated.date_year]
@@ -494,7 +494,7 @@
     height: 2
   - title: MRR Changes
     name: MRR Changes
-    model: block_keboola_mrr
+    model: block_keboola_mrr_v2
     explore: mrr_aggregated
     type: looker_column
     fields: [mrr_aggregated.gross_mrr_change, mrr_aggregated.date_month, mrr_aggregated.gross_action]

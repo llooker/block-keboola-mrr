@@ -43,24 +43,5 @@ connection: "@{CONNECTION}"
 
 label: "Block Keboola MRR"
 
-include: "*.view"
-include: "*.explore.lkml"
-include: "*.dashboard.lookml"
-include: "//@{CONFIG_PROJECT_NAME}/*.view.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.model.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.dashboard"
-
-explore: contract_line {
-  description: "Contains also contracts without MRR."
-  extends: [contract_line_config]
-}
-
-explore: mrr {
-  description: "Contains only contracts with MRR."
-  label: "MRR"
-  extends: [mrr_config]
-}
-
-explore: mrr_aggregated {
-  extends: [mrr_aggregated_config]
-}
+include: "/explores/*.explore.lkml"
+include: "/dashboards/*.dashboard.lookml"

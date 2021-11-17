@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/mrr.view"
-
 view: mrr {
-  extends: [mrr_config]
-}
-
-view: mrr_core {
   sql_table_name: @{SCHEMA_NAME}.MRR ;;
   label: "MRR"
 

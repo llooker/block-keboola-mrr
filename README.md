@@ -20,3 +20,7 @@ This block is built above processed data gathered from your contract/order/subsc
 The **Keboola Scaffold** will set up everything for you - from data extraction to data transformation, to setting up the Snowflake database with necessary tables for the LookML. All you need to do is set up the connection to the database in Looker and add it to the Looker model.
 
 In case you want to enrich your Looker model and dashboards with other fields or objects in your model or modify the process to ingest contracts from different data sources, you can modify the whole data extraction and processing directly in Keboola Connection.
+
+## Customization
+The LookML contents of this block can also be modified/extended to best fit all use cases.
+This block utilizes Refinement files for customization. For more information on using refinements to customize marketplace blocks, please see [this documentation](https://docs.looker.com/data-modeling/marketplace/customize-blocks).

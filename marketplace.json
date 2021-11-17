@@ -13,23 +13,12 @@
     },
     "SCHEMA_NAME": {
       "label": "Schema Name"
-    },
-    "CONFIG_PROJECT_NAME": {
-      "label": "Config Project Name"
     }
   },
   "models": [
     {
-      "name": "block_keboola_mrr",
+      "name": "block_keboola_mrr_v2",
       "connection_constant": "CONNECTION"
-    }
-  ],
-  "auxiliary_projects": [
-    {
-      "git_uri": "git://github.com/llooker/block-keboola-mrr-config.git",
-      "git_ref": "4ba139df3e1241136f48cc9112d53d4af8c3e0f7",
-      "label": "MRR by Keboola Config",
-      "constant_name": "CONFIG_PROJECT_NAME"
     }
   ]
 }
